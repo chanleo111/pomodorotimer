@@ -4,9 +4,6 @@ const Timer = () => {
     const [startTimer, setStartTimer] = useState(false);
     const TIME_SECONDS = 25*60;
     const [time, setTime] = useState(TIME_SECONDS);
-    const handleStartTimer = () => {
-        setStartTimer(true);
-    };
 
     useEffect(() => {
     if (startTimer && time > 0) {
